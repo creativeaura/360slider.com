@@ -4,6 +4,20 @@ var less = require('gulp-less');
 var path = require('path');
 var jshint = require('gulp-jshint');
 var sourcemaps = require('gulp-sourcemaps');
+var connect = require('gulp-connect');
+
+gulp.task('connect', function() {
+  connect.server({
+    root: 'app',
+    livereload: true,
+    port: 8000
+  });
+});
+
+gulp.task('html', function () {
+  gulp.src('./app/*.html')
+    .pipe(connect.reload());
+});
 
 gulp.task('less', function () {
   gulp.src('./app/css/**/*.less')
@@ -24,7 +38,8 @@ gulp.task('lint', function() {
 gulp.task('watch', function() {
   gulp.watch('app/css/**/*.less', ['less']);
   gulp.watch('app/js/**/*.js', ['lint']);
+  gulp.watch(['./app/*.html'], ['html']);
 });
 
 // Default Task
-gulp.task('default', ['less', 'lint']);
+gulp.task('default', ['connect', 'watch']);
