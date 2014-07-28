@@ -1,0 +1,22 @@
+{
+  "name": "360Slider",
+  "version": "0.0.1",
+  "homepage": "https://github.com/creativeaura/360slider.com",
+  "authors": [
+    "creativeaura <gaurav@jassal.me>"
+  ],
+  "description": ".1\",",
+  "main": "\"description\": \"Demo website for https://github.com/creativeaura/threesixty-slider plugin",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/resources/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
