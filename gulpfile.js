@@ -24,7 +24,8 @@ gulp.task('less', function () {
     .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./app/css'));
+    .pipe(gulp.dest('./app/css'))
+    .pipe(connect.reload());
 });
 
 gulp.task('lint', function() {

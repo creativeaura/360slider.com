@@ -1,94 +1,138 @@
-
 <!DOCTYPE html>
 <html class="full" lang="en">
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>ThreeSixty Slider</title>
+  <title>ThreeSixty Slider</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="resources/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="resources/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="resources/vendor/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+  <link href="resources/threesixty-slider/src/styles/threesixty.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">ThreeSixty Slider</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Default Settings</a>
-                    </li>
-                    <li>
-                        <a href="#">Custom Controls</a>
-                    </li>
-                    <li>
-                        <a href="#">Responsive Slider</a>
-                    </li>
-                    <li>
-                        <a href="#">Plugins</a>
-                    </li>
-                    <li>
-                        <a href="#">Full Page Scrolling</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Content -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <h1>ThreeSixty Slider</h1>
-                <p>This is a jQuery plugin to create 360 degree product image slider. The plugin is full customizable with number of options provided. The plugin have the power to display images in any angle 360 degrees. This feature can be used successfully in many use cases e.g. on an e-commerce site to help customers look products in detail, from any angle they desire.</p>
-            </div>
-        </div>
-        <!-- /.row -->
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><strong>ThreeSixty Slider</strong></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active">
+              <a href="#">Default Settings</a>
+          </li>
+          <li>
+              <a href="#">Custom Controls</a>
+          </li>
+          <li>
+              <a href="#">Responsive Slider</a>
+          </li>
+          <li>
+              <a href="#">Plugins</a>
+          </li>
+          <li>
+              <a href="#">Full Page Scrolling</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
+  </nav>
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="resources/vendor/jquery/dist/jquery.min.js"></script>
+  <!-- Page Content -->
+  <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <h1>ThreeSixty Slider</h1>
+          <p>This is a jQuery plugin to create 360 degree product image slider. The plugin is full customizable with number of options provided. The plugin have the power to display images in any angle 360 degrees. This feature can be used successfully in many use cases e.g. on an e-commerce site to help customers look products in detail, from any angle they desire.</p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <div class="github-download pull-right">
+            <a class="btn btn-primary btn-lg" href="https://github.com/creativeaura/threesixty-slider"><i class="fa-github fa"> </i> View on Github</a>
+            <a class="btn btn-lg btn-danger" href="https://github.com/creativeaura/threesixty-slider/archive/master.zip"><i class="fa fa-cloud-download" > </i> Download v2.0.0</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <section id="container">
+            <div class="threesixty product1">
+              <div class="spinner">
+                <span>0%</span>
+              </div>
+              <ol class="threesixty_images"></ol>
+            </div>
+          </section>
+        </div>
+      </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="resources/vendor/bootstrap/dist/js/bootstrap.js"></script>
+      <!-- /.row -->
+  </div>
+  <!-- /.container -->
 
+  <script src="resources/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="resources/vendor/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script src="resources/threesixty-slider/src/threesixty.js"></script>
+
+  <script type="text/javascript">
+    window.onload = init;
+
+    var product;
+    function init(){
+
+      product1 = $('.product1').ThreeSixty({
+        totalFrames: 52,
+        endFrame: 30,
+        currentFrame: 1,
+
+        imgList: '.threesixty_images',
+        progress: '.spinner',
+        imagePath:'img/car/',
+        filePrefix: '',
+        ext: '.png',
+        height: 447,
+        width: 1000,
+        navigation: true,
+        disableSpin: false
+      });
+
+    }
+
+  </script>
 </body>
 
 </html>
