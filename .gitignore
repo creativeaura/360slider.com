@@ -1,2 +1,3 @@
 app/resources/vendor
 node_modules/
+.codio
