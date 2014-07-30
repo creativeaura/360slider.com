@@ -12,7 +12,9 @@
   <title>ThreeSixty Slider</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="resources/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="resources/vendor/highlightjs/styles/github.css" rel="stylesheet">
+  <link href="resources/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="resources/vendor/font-awesome/css/font-awesome.css" rel="stylesheet">
 
   <link href="resources/threesixty-slider/src/styles/threesixty.css" rel="stylesheet">
@@ -65,6 +67,7 @@
               <a href="#">Full Page Scrolling</a>
           </li>
         </ul>
+
       </div>
       <!-- /.navbar-collapse -->
     </div>
@@ -75,8 +78,8 @@
   <div class="container">
       <div class="row">
         <div class="col-md-7 col-sm-12">
-          <h1>ThreeSixty Slider</h1>
-          <p>This is a jQuery plugin to create 360 degree product image slider. The plugin is full customizable with number of options provided. The plugin have the power to display images in any angle 360 degrees. This feature can be used successfully in many use cases e.g. on an e-commerce site to help customers look products in detail, from any angle they desire.</p>
+          <h1 class="animated flipInY">ThreeSixty Slider</h1>
+          <p class="animated fadeIn">This is a jQuery plugin to create <a href="https://github.com/creativeaura/threesixty-slider">360 degree product image slider</a>. The plugin is full customizable with number of options provided. The plugin have the power to display images in any angle 360 degrees. This feature can be used successfully in many use cases e.g. on an e-commerce site to help customers look products in detail, from any angle they desire.</p>
         </div>
         <div class="col-md-5 col-sm-12">
           <div class="github-download pull-right">
@@ -87,8 +90,8 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <section id="container">
+        <div class="col-lg-7 col-md-7 col-sm-12">
+          <section id="container" class="threesixty-container">
             <div class="threesixty product1">
               <div class="spinner">
                 <span>0%</span>
@@ -97,6 +100,28 @@
             </div>
           </section>
         </div>
+
+        <div class="col-lg-5 col-md-5 col-sm-12">
+          <pre>
+            <code class="javascript animated flipInX">
+  var product1 = $('.product1').ThreeSixty({
+    totalFrames: 52,
+    endFrame: 30,
+    currentFrame: 1,
+    imgList: '.threesixty_images',
+    progress: '.spinner',
+    imagePath:'img/car/',
+    filePrefix: '',
+    ext: '.png',
+    height: 350,
+    width: 800,
+    navigation: true,
+    disableSpin: false,
+    responsive: true
+  });</code>
+          </pre>
+        </div>
+
       </div>
 
       <!-- /.row -->
@@ -105,6 +130,7 @@
 
   <script src="resources/vendor/jquery/dist/jquery.min.js"></script>
   <script src="resources/vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="resources/vendor/highlightjs/highlight.pack.js"></script>
 
   <script src="resources/threesixty-slider/src/threesixty.js"></script>
 
@@ -124,14 +150,17 @@
         imagePath:'img/car/',
         filePrefix: '',
         ext: '.png',
-        height: 447,
-        width: 1000,
+        height: 350,
+        width: 700,
         navigation: true,
-        disableSpin: false
+        disableSpin: false,
+        responsive: true
       });
-
     }
-
+  </script>
+  <script type="text/javascript">
+    // hljs.configure({classPrefix: ''});
+    hljs.initHighlightingOnLoad();
   </script>
 </body>
 
